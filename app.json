@@ -1,0 +1,12 @@
+{
+  "name": "mobilevent",
+  "displayName": "mobilevent",
+  "expo": {
+    "name": "mobilevent",
+    "slug": "mobilevent",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
