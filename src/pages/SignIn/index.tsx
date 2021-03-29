@@ -1,4 +1,5 @@
 import React, { useCallback, useRef } from 'react';
+
 import { View, ScrollView,  KeyboardAvoidingView, Platform, TextInput  } from 'react-native';
 import { useNavigation } from '@react-navigation/native'
 import { Form } from '@unform/mobile';
@@ -6,6 +7,7 @@ import { FormHandles } from '@unform/core';
 
 import Input from '../../components/Input';
 import Button from '../../components/Button';
+
 
 import { Container, Title, ForgotPassword, ForgotPasswordText, CompanyText } from './styles';
 
