@@ -1,0 +1,63 @@
+LINK PARA CRIAR E ADD CHAVE SSH NO GITHUB
+
+ssh-keygen -t ed25519 -C "raidandias.ti@gmail.com"
+
+https://docs.github.com/pt/free-pro-team@latest/github/authenticating-to-github/checking-for-existing-ssh-keys
+
+- Criar branch
+git checkout -b alterar-git-txt.master
+
+- Indo para outra branch
+git checkout minha-branch
+
+- Listar arquivos modificados
+git status
+
+- Adicionar Arquivo
+git add lib/style.css
+git commit -m "mensagem aqui dentro"
+
+- Enviar estas alterações
+git push origin master
+
+- Trocar branch
+git checkout master
+
+- Apagando um repositório
+rm -rf .git
+
+-Removendo arquivos do Stage
+git reset
+
+- Desfazendo o último commit
+git revert HEAD
+
+- Renomear Commit
+git commit --amend
+
+- Listando Branches
+git branch
+
+git branch -a (listar remoto)
+
+- Excluindo branches
+git branch -D nome-da-branch
+
+– Renomeando branches
+git branch -m novo-nome-da-branch
+
+- Atualizar
+git pull
+
+- Merger
+git merge
+
+- Empurrar para o git pela primeira vez
+git push --set-upstream origin alterar-git-txt
+
+- Empurrar para o git
+git push
+
+- Troca usuario do .git
+git config --global user.name "Herbert-Santos"
+git config --global user.email "hebertesantos123@gmail.com"
