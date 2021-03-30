@@ -22,13 +22,10 @@ const AccountUser: React.FC = () => {
                             data={item}
                         />
                     )}
-                    ItemSeparatorComponent= { () => <Separator/>}
                 />
             </View>
         </Container>
     );
 };
-
-const Separator = () => <View style={{flex:1, height: 15, backgroundColor:'#0C0808 '}}></View>
 
 export default AccountUser;

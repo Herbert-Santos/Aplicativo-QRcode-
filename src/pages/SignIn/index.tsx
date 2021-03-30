@@ -11,6 +11,7 @@ import Button from '../../components/Button';
 
 
 import { Container, Title, ForgotPassword, ForgotPasswordText, CompanyText } from './styles';
+import AccountUser from '../AccountUser';
 
 const SignIn: React.FC =  () => {
     const formRef = useRef<FormHandles>(null);
@@ -42,9 +43,7 @@ const SignIn: React.FC =  () => {
                         <Input ref={passwordInputRef} onSubmitEditing={() => {}} returnKeyType="next" autoCorrect={false} autoCapitalize="none" keyboardType="email-address" name="email" icon="mail" placeholder="E-mail" />
                         <Input textContentType="newPassword" secureTextEntry  returnKeyType="send" onSubmitEditing={() => {formRef.current?.submitForm();}} name="password" icon="lock" placeholder="Senha" />
 
-                        <Button
-                            onPress={() => {formRef.current?.submitForm();}}
-                        >Entrar</Button>
+                        <Button onPress={() =>navigation.navigate('AccountUser')}>Entrar</Button>
                     </Form>
 
                     <ForgotPassword onPress={() => navigation.navigate('ForgotPassword')}>

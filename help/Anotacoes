@@ -20,3 +20,6 @@
 
 - criar pagina que retorna todas as contas que um usuário estiver na plataforma(essa requisicao sera feita por uma API)
 - criar um evento no button ENVIAR da pagina Signin(evento que redireciona para uma pagina AccountUser)
+
+# Problemas
+- ------
