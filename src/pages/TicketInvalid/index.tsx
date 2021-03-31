@@ -23,7 +23,7 @@ const TicketInvalid: React.FC =  () => {
                     <Title>Ingresso invalido</Title>
                 </View>
 
-                <Button onPress={() => navigation.navigate('SignIn')}>
+                <Button onPress={() => navigation.navigate('SignIn')} style={{width: '100%'}}>
                     Scanear novament
                 </Button>
             </Container>
