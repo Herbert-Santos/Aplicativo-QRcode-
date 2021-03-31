@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, FlatList } from 'react-native';
-import { TabBarItem } from 'react-native-tab-view';
+import { ListItem } from '../../components/ListItem';
 
 import { Container, Title } from './styles';
 
@@ -17,7 +17,11 @@ const AccountUser: React.FC = () => {
                 <Title>Portal ERP</Title>
                 <FlatList 
                     data={AccountList}
-                    keyExtractor={item => item.id}
+                    renderItem={ ({item}) => (
+                        <ListItem
+                            data={item}
+                        />
+                    )}
                 />
             </View>
         </Container>
