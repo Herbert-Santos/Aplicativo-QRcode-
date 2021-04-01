@@ -20,7 +20,7 @@ const PasswordMassage: React.FC =  () => {
                     <Title>Verifique sua caixa de email</Title>
                 </View>
 
-                <Button onPress={() => navigation.navigate('SignIn')}>
+                <Button onPress={() => navigation.navigate('SignIn')} style={{width: '100%'}}>
                     Fazer login novamente
                 </Button>
             </Container>
