@@ -18,20 +18,20 @@ const AccountUser: React.FC = () => {
 
     return (
         <Container>
-                <ScrollView>
-            <View>
-                <Title>Portal ERP</Title>
-                
-                <FlatList 
-                    data={AccountList}
-                    keyExtractor={item => item.id}
-                    renderItem={ ({item}) => (
-                        <ListItem
-                            data={item}
-                        />
-                    )}
-                />
-            </View>
+            <ScrollView>
+                <View>
+                    <Title>                 Portal ERP                    </Title>
+                    
+                    <FlatList 
+                        data={AccountList}
+                        keyExtractor={item => item.id}
+                        renderItem={ ({item}) => (
+                            <ListItem
+                                data={item}
+                            />
+                        )}
+                    />
+                </View>
             </ScrollView>
         </Container>
     );

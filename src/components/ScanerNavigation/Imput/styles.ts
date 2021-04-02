@@ -13,4 +13,4 @@ export const TextInput = Styled.TextInput`
     flex: 1;
     color: #0C0808;
     font-size: 16px;
-`; 
+`;

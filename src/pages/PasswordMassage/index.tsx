@@ -4,7 +4,7 @@ import { useNavigation } from '@react-navigation/native';
 
 import Button from '../../components/Button';
 
-import { Container, Title, CompanyText } from './styles';
+import { Container, Title, CompanyText, FirstTitle } from './styles';
 
 const PasswordMassage: React.FC =  () => {
     const navigation = useNavigation();
@@ -17,6 +17,7 @@ const PasswordMassage: React.FC =  () => {
         >
             <Container>
                 <View>
+                    <FirstTitle>Pronto</FirstTitle>
                     <Title>Verifique sua caixa de email</Title>
                 </View>
 

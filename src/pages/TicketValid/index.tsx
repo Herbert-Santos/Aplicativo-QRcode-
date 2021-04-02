@@ -15,7 +15,7 @@ const TicketValid: React.FC =  () => {
             behavior={Platform.OS == 'ios' ? 'padding' :  undefined}
             enabled
         >
-            <ComeBack onPress={() => navigation.navigate('SignIn')}>
+            <ComeBack onPress={() => navigation.navigate('AccountUser')}>
                 <ComeBackText>Voltar pra eventos</ComeBackText>
             </ComeBack>
             <Container>
@@ -23,7 +23,7 @@ const TicketValid: React.FC =  () => {
                     <Title>Ingresso valido</Title>
                 </View>
 
-                <Button onPress={() => navigation.navigate('SignIn')} style={{width: '100%'}}>
+                <Button onPress={() => navigation.navigate('ScanerNavigation')} style={{width: '100%'}}>
                     Prosseguir scan
                 </Button>
             </Container>

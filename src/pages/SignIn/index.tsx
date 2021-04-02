@@ -11,7 +11,6 @@ import Button from '../../components/Button';
 
 
 import { Container, Title, ForgotPassword, ForgotPasswordText, CompanyText } from './styles';
-import AccountUser from '../AccountUser';
 
 const SignIn: React.FC =  () => {
     const formRef = useRef<FormHandles>(null);

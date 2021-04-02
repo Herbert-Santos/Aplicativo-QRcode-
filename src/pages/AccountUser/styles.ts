@@ -12,4 +12,7 @@ export const Title = Styled.Text`
     padding: 30px;
     color: #0C0808;
     align-self: center;
+    border-bottom-width: 2px;
+    left: 0;
+
 `;

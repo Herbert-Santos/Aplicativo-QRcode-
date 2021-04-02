@@ -20,3 +20,11 @@ export const CompanyText = styled.Text`
     font-size: 12px;
     padding: 10px;
 `;
+
+export const FirstTitle = styled.Text`
+    font-size: 30px;
+    color: #f4ede8;
+    margin: 64px 0 24px;
+    padding: 10px;
+    text-align: center;
+`;

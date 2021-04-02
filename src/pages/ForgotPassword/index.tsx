@@ -32,9 +32,7 @@ const ForgotPassword: React.FC =  () => {
                     <Form ref={formRef} onSubmit={(data) => {console.log(data)}}>
                         <Input autoCorrect={false} autoCapitalize="none" keyboardType="email-address" name="email" icon="mail" placeholder="E-mail" />
 
-                        <Button
-                            onPress={() => formRef.current?.submitForm()}
-                        >Redefinir senha</Button>
+                        <Button onPress={() => navigation.navigate('PasswordMassage')}>Redefinir senha</Button>
 
                         <ComeBack onPress={() => navigation.goBack()}>
                             <ComeBackText>Voltar</ComeBackText>
