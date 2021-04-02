@@ -8,6 +8,7 @@ import TicketValid from '../pages/TicketValid';
 import TicketInvalid from '../pages/TicketInvalid';
 import ScanerNavigation from '../pages/ScanerNavigation';
 import AccountUser from '../pages/AccountUser';
+import Teste from '../pages/Teste';
 
 const Auth = createStackNavigator();
 
@@ -17,7 +18,7 @@ const AuthRoutes: React.FC = () =>(
             headerShown: false,
             cardStyle: { backgroundColor: '#85929E'}
         }}
-        initialRouteName='SignIn'
+        initialRouteName='Teste'
     >
         <Auth.Screen name="SignIn" component={SignIn} />
         <Auth.Screen name="ForgotPassword" component={ForgotPassword} />
@@ -26,6 +27,7 @@ const AuthRoutes: React.FC = () =>(
         <Auth.Screen name="TicketInvalid" component={TicketInvalid} />
         <Auth.Screen name="ScanerNavigation" component={ScanerNavigation} />
         <Auth.Screen name="AccountUser" component={AccountUser} />
+        <Auth.Screen name="Teste" component={Teste} />
 
     </Auth.Navigator>
 );
