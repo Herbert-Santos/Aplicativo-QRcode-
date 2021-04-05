@@ -17,7 +17,7 @@ const AuthRoutes: React.FC = () =>(
             headerShown: false,
             cardStyle: { backgroundColor: '#1b792f'}
         }}
-        initialRouteName='PasswordMassage'
+        initialRouteName='SignIn'
     >
         <Auth.Screen name="SignIn" component={SignIn} />
         <Auth.Screen name="ForgotPassword" component={ForgotPassword} />
