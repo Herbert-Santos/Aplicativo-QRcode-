@@ -4,6 +4,8 @@ import React from 'react';
 import { View, StatusBar } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 
+import {ApplicationProvider} from '@ui-kitten/components';
+
 import Routes from './routes';
 
 const App: React.FC = () => (
