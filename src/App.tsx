@@ -1,19 +1,22 @@
-import 'react-native-gesture-handler';
-
 import React from 'react';
-import { View, StatusBar } from 'react-native';
+import {StatusBar, View} from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
+
+import * as eva from '@eva-design/eva';
+import { ApplicationProvider, Layout,TabView } from '@ui-kitten/components';
 
 import Routes from './routes';
 
-const App: React.FC = () => (
+const HomeScreen = () => (
   <NavigationContainer>
-    <StatusBar />
-    <View style={{flex: 1}}>
-      <Routes /> 
-    </View>
+    <Layout style={{flex: 1, alignItems:'center', justifyContent: 'center'}}>
+      <Routes/>
+    </Layout>
   </NavigationContainer>
 );
 
-
-export default App; 
+export default () => (
+  <ApplicationProvider {...eva} theme={eva.dark}>
+    <HomeScreen />
+  </ApplicationProvider>
+);
