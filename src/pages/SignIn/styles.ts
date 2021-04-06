@@ -2,7 +2,7 @@ import styled from 'styled-components/native';
 
 import { ApplicationProvider, Layout,TabView } from '@ui-kitten/components';
 
- export const Container = styled(Layout)`
+ export const Container = styled.View`
     align-items: center;
     justify-content: center;
     flex: 1;
