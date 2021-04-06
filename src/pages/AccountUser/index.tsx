@@ -7,13 +7,13 @@ import { Container, Title } from './styles';
 
 const AccountUser: React.FC = () => {
     const AccountList = [
-        {id:'1', accountUser: 'login'},
-        {id:'2', accountUser: 'loginTeem'},
-        {id:'3', accountUser: 'loginBussines'},
-        {id:'4', accountUser: 'loginEvent'},
-        {id:'5', accountUser: 'loginDeveloper'},
-        {id:'6', accountUser: 'loginFrontEnd'},
-        {id:'7', accountUser: 'loginBackEnd'},
+        {id:'1', accountUser: 'Coca-Cola'},
+        {id:'2', accountUser: 'Ford'},
+        {id:'3', accountUser: 'Apple'},
+        {id:'4', accountUser: 'Mercedes-Benz'},
+        {id:'5', accountUser: 'McDonald’s'},
+        {id:'6', accountUser: 'Google'},
+        {id:'7', accountUser: 'Walmart'},
     ];
 
     return (

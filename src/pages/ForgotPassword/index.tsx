@@ -26,7 +26,7 @@ const ForgotPassword: React.FC =  () => {
 
                 <Container>
                     <View>
-                        <Title>Digite seu email de login</Title>
+                        <Title>Digite seu email</Title>
                     </View>
 
                     <Form ref={formRef} onSubmit={(data) => {console.log(data)}}>

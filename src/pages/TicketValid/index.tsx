@@ -16,16 +16,14 @@ const TicketValid: React.FC =  () => {
             enabled
         >
             <ComeBack onPress={() => navigation.navigate('SignIn')}>
-                <ComeBackText>Voltar pra eventos</ComeBackText>
+                <ComeBackText>Voltar para eventos</ComeBackText>
             </ComeBack>
             <Container>
-                <View>
-                    <Title>Ingresso valido</Title>
+                <View >
+                    <Title>Ingresso válido</Title>
                 </View>
 
-                <Button onPress={() => navigation.navigate('SignIn')} style={{width: '100%'}}>
-                    Prosseguir scan
-                </Button>
+                <Button onPress={() => navigation.navigate('SignIn')} style={{width: '100%'}}>Ler QRcode</Button>
             </Container>
         </KeyboardAvoidingView>
     </> 

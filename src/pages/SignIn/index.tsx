@@ -36,7 +36,7 @@ const SignIn: React.FC =  () => {
 
                 <Container>
                     <View>
-                        <Title>Faca seu login</Title>
+                        <Title>Faça seu login</Title>
                     </View>
 
                     <Form  ref={formRef} onSubmit={handleSignIn}>

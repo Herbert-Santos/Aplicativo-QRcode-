@@ -16,16 +16,14 @@ const TicketInvalid: React.FC =  () => {
             enabled
         >
             <ComeBack onPress={() => navigation.navigate('SignIn')}>
-                <ComeBackText>Voltar pra eventos</ComeBackText>
+                <ComeBackText>Voltar para eventos</ComeBackText>
             </ComeBack>
             <Container>
                 <View>
-                    <Title>Ingresso invalido</Title>
+                    <Title>Ingresso inválido</Title>
                 </View>
 
-                <Button onPress={() => navigation.navigate('SignIn')} style={{width: '100%'}}>
-                    Scanear novament
-                </Button>
+                <Button onPress={() => navigation.navigate('SignIn')} style={{width: '100%'}}>Ler novamente</Button>
             </Container>
         </KeyboardAvoidingView>
     </> 

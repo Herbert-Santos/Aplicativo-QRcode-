@@ -13,7 +13,7 @@ const ScannerManual:React.FC = () => (
         <Container >
             <TextInput name="codigo" placeholder="Digite seu código"/>
         </Container>
-        <Button>PRONTO</Button>
+        <Button>Validar</Button>
     </>
 );
 
