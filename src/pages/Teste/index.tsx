@@ -6,17 +6,15 @@ import Signin from '../SignIn';
 import Routes from '../../routes';
 
 const Teste = () => (
-    <>
-  <Layout style={{flex: 1, justifyContent: 'center', alignItems: 'center', margin:23}}>
+  <Layout style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
     <Button style={{borderColor: "#fff"}}>
-        {evaProps => <Text {...evaProps}>BUTTON</Text>}
+      {evaProps => <Text {...evaProps}>BUTTON</Text>}
     </Button>
   </Layout>
-  </>
 );
 
 export default () => (
   <ApplicationProvider {...eva} theme={eva.dark}>
-    <Routes />
+    <Teste />
   </ApplicationProvider>
 );
