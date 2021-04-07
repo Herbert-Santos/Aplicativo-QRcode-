@@ -6,17 +6,22 @@ import { View, StatusBar } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 
 import * as eva from '@eva-design/eva';
-import { ApplicationProvider, Layout, Text, Button } from '@ui-kitten/components';
+import { ApplicationProvider } from '@ui-kitten/components';
 
 import Routes from './routes';
 
 const App: React.FC = () => (
   <NavigationContainer>
-      <ApplicationProvider {...eva} theme={eva.light}>
-    <Routes/>
-  </ApplicationProvider>
+    <StatusBar />
+    <View style={{flex: 1}}>
+      <Routes /> 
+    </View>
   </NavigationContainer>
 );
 
 
-export default App;
+export default () => (
+  <ApplicationProvider {...eva} theme={eva.dark}>
+    <App />
+  </ApplicationProvider>
+); 

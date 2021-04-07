@@ -5,13 +5,18 @@ import { useNavigation } from '@react-navigation/native'
 import { Form } from '@unform/mobile';
 import { FormHandles } from '@unform/core';
 
-import Input from '../../components/Input';
-import Button from '../../components/Button';
+import * as eva from '@eva-design/eva';
+import { Button, Input, Icon } from '@ui-kitten/components';
+
+
+// import Input from '../../components/Input';
+// import Button from '../../components/Button';
 // import {ListItem} from '../../components/ListItem'
 
 
 import { Container, Title, ForgotPassword, ForgotPasswordText, CompanyText } from './styles';
-import AccountUser from '../AccountUser';
+// import AccountUser from '../AccountUser';
+// import { Icon } from 'react-native-vector-icons/Icon';
 
 const SignIn: React.FC =  () => {
     const formRef = useRef<FormHandles>(null);
@@ -40,8 +45,8 @@ const SignIn: React.FC =  () => {
                     </View>
 
                     <Form ref={formRef} onSubmit={handleSignIn}>
-                        <Input ref={passwordInputRef} onSubmitEditing={() => {}} returnKeyType="next" autoCorrect={false} autoCapitalize="none" keyboardType="email-address" name="email" icon="mail" placeholder="E-mail"/>
-                        <Input textContentType="newPassword" secureTextEntry  returnKeyType="send" onSubmitEditing={() => {formRef.current?.submitForm();}} name="password" icon="lock" placeholder="Senha" />
+                        <Input onSubmitEditing={() => {}} returnKeyType="next" autoCorrect={false} autoCapitalize="none" keyboardType="email-address" placeholder="E-mail"/>
+                        <Input textContentType="newPassword" secureTextEntry  returnKeyType="send" onSubmitEditing={() => {formRef.current?.submitForm();}} placeholder="Senha" />
 
                         <Button onPress={() =>navigation.navigate('AccountUser')}>Entrar</Button>
                     </Form>
@@ -57,6 +62,5 @@ const SignIn: React.FC =  () => {
     </>
     );
 };
-
 
 export default SignIn;
