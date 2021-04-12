@@ -27,7 +27,7 @@ export default function Scanner(props) {
   }
 
   return (
-    <View style={{flex: 1}}>
+    <View style={{flex: 1, backgroundColor:'#2E4061'}}>
 
       <BarCodeScanner
         onBarCodeScanned={scanned ? undefined : handleBarCodeScanned}

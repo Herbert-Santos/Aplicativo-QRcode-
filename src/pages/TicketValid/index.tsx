@@ -2,7 +2,8 @@ import React from 'react';
 import { View, KeyboardAvoidingView, Platform  } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
-import Button from '../../components/Button';
+// import Button from '../../components/Button';
+import { Button, Text } from '@ui-kitten/components';
 
 import { Container, Title, ComeBack, ComeBackText } from './styles';
 
@@ -23,7 +24,7 @@ const TicketValid: React.FC =  () => {
                     <Title>Ingresso válido</Title>
                 </View>
 
-                <Button onPress={() => navigation.navigate('SignIn')} style={{width: '100%'}}>Ler QRcode</Button>
+                <Button onPress={() => navigation.navigate('ScanerNavigation')} style={{width: '100%'}}>Ler QRcode</Button>
             </Container>
         </KeyboardAvoidingView>
     </> 
