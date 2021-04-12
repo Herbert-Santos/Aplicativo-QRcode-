@@ -4,10 +4,12 @@ import { useNavigation } from '@react-navigation/native';
 import { Form } from '@unform/mobile';
 import { FormHandles } from '@unform/core';
 
-import Input from '../../components/Input';
-import Button from '../../components/Button';
+// import Input from '../../components/Input';
+// import Button from '../../components/Button';
+import { ApplicationProvider, Layout, Text, Button, Input } from '@ui-kitten/components';
 
 import { Container, Title, ComeBack, ComeBackText, CompanyText } from './styles';
+
 
 const ForgotPassword: React.FC =  () => {
     const formRef = useRef<FormHandles>(null);
@@ -36,7 +38,7 @@ const ForgotPassword: React.FC =  () => {
                             onPress={() => formRef.current?.submitForm()}
                         >Redefinir senha</Button>
 
-                        <ComeBack onPress={() => navigation.goBack()}>
+                        <ComeBack onPress={() => navigation.navigate('SignIn')}>
                             <ComeBackText>Voltar</ComeBackText>
                         </ComeBack>
                     </Form>

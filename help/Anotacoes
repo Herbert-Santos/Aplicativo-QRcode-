@@ -1,25 +1,5 @@
-25/03 ApiScanner Portal ERP
+12/04 ApiScanner Portal ERP
 
-- estilização da pagina onde sera feito a leitura do QRcode ex: posicionamento da câmera, cores na barra de menu da pagina, função que armazena os dados do QRCODE em uma função
-
-# Problemas
-- ------
-
-26/03 ApiScanner Portal ERP
-
-- criar um evento no qual o usuario digite manualmente seu codigo QRcode
-- criar um evento que ao inicializar qualquer atividade como, fazer login, digitar email de recuperação de senha, apague todas as informações que contenha dentro do input
-- criar um evento que recebe o valor ao ler qrcode e direcione para pagina de ingesso valido ou ingresso nao valido
-
-# Problemas
-- Sem internet de manha
-- ------
-
-
-29/03 ApiScanner Portal ERP
-
-- criar pagina que retorna todas as contas que um usuário estiver na plataforma(essa requisicao sera feita por uma API)
-- criar um evento no button ENVIAR da pagina Signin(evento que redireciona para uma pagina AccountUser)
-
-# Problemas
-- ------
+-- validacao de formularios
+-- autenticacao de usuarios
+-- adicionar recurso de avatar na pagina (listIten)

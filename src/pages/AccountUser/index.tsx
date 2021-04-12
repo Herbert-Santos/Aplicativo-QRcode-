@@ -12,8 +12,6 @@ const AccountUser: React.FC = () => {
         {id:'3', accountUser: 'Apple'},
         {id:'4', accountUser: 'Mercedes-Benz'},
         {id:'5', accountUser: 'McDonald’s'},
-        {id:'6', accountUser: 'Google'},
-        {id:'7', accountUser: 'Walmart'},
     ];
 
     return (

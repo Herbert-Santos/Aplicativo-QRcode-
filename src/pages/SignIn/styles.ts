@@ -12,6 +12,7 @@ import styled from 'styled-components/native';
     color: #f4ede8;
     margin: 64px 0 24px;
     padding: 16px;
+    align-self: center;
  `;
 
  export const ForgotPassword = styled.TouchableOpacity`
@@ -22,6 +23,7 @@ import styled from 'styled-components/native';
    color: #f4ede8;
    font-size: 15px;
    font-family: 'Roboto'; 
+   align-self: center;
  `;
 
  export const CompanyText = styled.Text`
@@ -29,4 +31,5 @@ import styled from 'styled-components/native';
    align-self: center;
    font-size: 12px;
    padding: 10px;
+   margin-top:140px;
  `;
