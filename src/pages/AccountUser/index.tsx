@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { View, FlatList, ScrollView } from 'react-native';
+import { View, FlatList, ScrollView, StatusBar } from 'react-native';
 import { ListItem } from '../../components/ListItem';
 
 import { Container, Title } from './styles';
@@ -17,6 +17,7 @@ const AccountUser: React.FC = () => {
     return (
         <Container>
                 <ScrollView>
+                    <StatusBar />
             <View>
                 <Title>Portal ERP</Title>
                 

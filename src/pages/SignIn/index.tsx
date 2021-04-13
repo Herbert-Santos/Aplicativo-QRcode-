@@ -10,10 +10,9 @@ import { FormHandles } from '@unform/core';
 // import {ListItem} from '../../components/ListItem'
 
 import palestra from '/Users/hebertsantos/Developer/Aplicativo/mobilevent/src/assets/palestra.jpg';
-import { Container, Title, ForgotPassword, ForgotPasswordText, CompanyText } from './styles';
-import { ApplicationProvider, Layout, Text, Button, Input } from '@ui-kitten/components';
+import { Title, ForgotPassword, ForgotPasswordText, CompanyText } from './styles';
+import { ApplicationProvider, Button, Input } from '@ui-kitten/components';
 import * as eva from '@eva-design/eva';
-
 
 const SignIn: React.FC =  () => {
     const formRef = useRef<FormHandles>(null);
@@ -36,7 +35,6 @@ const SignIn: React.FC =  () => {
                 contentContainerStyle={{flex: 1}}
             >
                 <ImageBackground source={palestra} style={{flex:1, justifyContent:'center'}}>
-                    {/* <ImageBackground style={{flex:1}} resizeMode={'cover'} source={palmeira} /> */}
                     <View>
                         <Title>Faça seu login</Title>
                     </View>
@@ -51,12 +49,11 @@ const SignIn: React.FC =  () => {
                     <ForgotPassword onPress={() => navigation.navigate('ForgotPassword')}>
                         <ForgotPasswordText>Esqueceu a senha</ForgotPasswordText>
                     </ForgotPassword>
-                    <CompanyText>ERPevent@copyhight</CompanyText>
-                </ImageBackground>
-                
-            </ScrollView>
 
-            
+                    <CompanyText>ERPevent@copyhight</CompanyText>
+
+                </ImageBackground>
+            </ScrollView>
         </KeyboardAvoidingView>
     </>
     );
@@ -64,7 +61,7 @@ const SignIn: React.FC =  () => {
 
 
 export default () => (
-    <ApplicationProvider {...eva} theme={eva.light}>
+    <ApplicationProvider {...eva} theme={eva.dark}>
       <SignIn />
     </ApplicationProvider>
   );

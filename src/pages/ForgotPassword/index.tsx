@@ -4,9 +4,9 @@ import { useNavigation } from '@react-navigation/native';
 import { Form } from '@unform/mobile';
 import { FormHandles } from '@unform/core';
 
-// import Input from '../../components/Input';
-// import Button from '../../components/Button';
-import { ApplicationProvider, Layout, Text, Button, Input } from '@ui-kitten/components';
+import Input from '../../components/Input';
+import Button from '../../components/Button';
+// import { Button, Input } from '@ui-kitten/components';
 
 import { Container, Title, ComeBack, ComeBackText, CompanyText } from './styles';
 
