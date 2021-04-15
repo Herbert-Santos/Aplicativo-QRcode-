@@ -17,7 +17,7 @@ const AuthRoutes: React.FC = () =>(
             headerShown: false,
             cardStyle: {backgroundColor: '#2E4061'}
         }}
-        initialRouteName='SignIn'
+        initialRouteName='TicketInvalid'
     >
         <Auth.Screen name="SignIn" component={SignIn} />
         <Auth.Screen name="ForgotPassword" component={ForgotPassword} />
@@ -26,8 +26,6 @@ const AuthRoutes: React.FC = () =>(
         <Auth.Screen name="TicketInvalid" component={TicketInvalid} />
         <Auth.Screen name="ScanerNavigation" component={ScanerNavigation} />
         <Auth.Screen name="AccountUser" component={AccountUser} />
-
-
     </Auth.Navigator>
 );
 

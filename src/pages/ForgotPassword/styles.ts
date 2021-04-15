@@ -10,8 +10,8 @@ import styled from 'styled-components/native';
  export const Title = styled.Text`
     font-size: 20px;
     color: #f4ede8;
-    margin: 64px 0 24px;
-    padding: 16px;
+    margin: 30px;
+    padding: 30px;
  `;
 
  export const ComeBack = styled.TouchableOpacity`
@@ -22,7 +22,7 @@ import styled from 'styled-components/native';
    color: #f4ede8;
    align-self: center;
    font-size: 15px;
-   padding: 30px;
+   padding: 30px; 
  `;
 
 export const CompanyText = styled.Text`

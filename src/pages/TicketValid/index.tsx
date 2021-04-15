@@ -3,7 +3,7 @@ import { View, KeyboardAvoidingView, Platform  } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
 // import Button from '../../components/Button';
-import { Button, Text } from '@ui-kitten/components';
+import { Button } from '@ui-kitten/components';
 
 import { Container, Title, ComeBack, ComeBackText } from './styles';
 
