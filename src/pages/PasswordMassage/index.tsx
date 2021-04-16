@@ -2,10 +2,9 @@ import React from 'react';
 import { View, KeyboardAvoidingView, Platform  } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
-// import Button from '../../components/Button';
-
 import { Container, Title, CompanyText } from './styles';
-import { ApplicationProvider, Layout, Text, Button, Input } from '@ui-kitten/components';
+// import { Button } from '@ui-kitten/components';
+import Button from '../../components/Button';
 
 const PasswordMassage: React.FC =  () => {
     const navigation = useNavigation();
@@ -30,6 +29,5 @@ const PasswordMassage: React.FC =  () => {
     </> 
     );
 };
-
 
 export default PasswordMassage; 

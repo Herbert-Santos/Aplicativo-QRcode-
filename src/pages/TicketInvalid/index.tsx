@@ -2,8 +2,8 @@ import React from 'react';
 import { View, KeyboardAvoidingView, Platform  } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
-// import Button from '../../components/Button';
-import { Button } from '@ui-kitten/components';
+import Button from '../../components/Button';
+// import { Button } from '@ui-kitten/components';
 
 import { Container, Title, ComeBack, ComeBackText } from './styles';
 
@@ -24,7 +24,7 @@ const TicketInvalid: React.FC =  () => {
                     <Title>Ingresso inválido</Title>
                 </View>
 
-                <Button onPress={() => navigation.navigate('AccountUser')} style={{width: '100%'}}>Ler novamente</Button>
+                <Button onPress={() => navigation.navigate('ScanerNavigation')} style={{width: '100%'}}>Ler novamente</Button>
             </Container>
         </KeyboardAvoidingView>
     </> 
