@@ -1,6 +1,7 @@
 import React from 'react';
-import { View, KeyboardAvoidingView, Platform  } from 'react-native';
+import { View, KeyboardAvoidingView, Platform, TouchableOpacity } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
+import Icon from 'react-native-vector-icons/AntDesign';
 
 import Button from '../../components/Button';
 // import { Button } from '@ui-kitten/components';
@@ -16,11 +17,14 @@ const TicketValid: React.FC =  () => {
             behavior={Platform.OS == 'ios' ? 'padding' :  undefined}
             enabled
         >
-            <ComeBack onPress={() => navigation.navigate('SignIn')}>
-                <ComeBackText>Voltar para eventos</ComeBackText>
-            </ComeBack>
+
             <Container>
-                <View >
+                <TouchableOpacity style={{alignItems:'flex-end', bottom:80}} onPress={() => navigation.navigate('SignIn')} >
+                    <Icon name="bars" size={25} color="#fff"/>
+                </TouchableOpacity>
+
+                <View style={{alignItems:'center'}}>
+                    <Icon name="checkcircleo" size={50} color="#8aec86"/>
                     <Title>Ingresso válido</Title>
                 </View>
 

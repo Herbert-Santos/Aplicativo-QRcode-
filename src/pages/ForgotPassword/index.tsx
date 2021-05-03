@@ -1,13 +1,14 @@
 import React, { useRef } from 'react';
-import { ScrollView, KeyboardAvoidingView, Platform } from 'react-native';
+import { ScrollView, KeyboardAvoidingView, Platform, TouchableOpacity, View } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { Form } from '@unform/mobile';
 import { FormHandles } from '@unform/core';
+import Icon from 'react-native-vector-icons/AntDesign';
 
 import { ApplicationProvider, Input, Button } from '@ui-kitten/components';
 import * as eva from '@eva-design/eva';
 
-import { Container, Title, ComeBack, ComeBackText, CompanyText } from './styles';
+import { Container, Title, CompanyText } from './styles';
 
 const ForgotPassword: React.FC =  () => {
     const formRef = useRef<FormHandles>(null);
@@ -23,17 +24,15 @@ const ForgotPassword: React.FC =  () => {
                 contentContainerStyle={{flex: 1}}
             >
                 <Container>
-                    <Title>Digite seu email</Title>
+                        <TouchableOpacity style={{alignItems:'flex-start', bottom:100}} onPress={() => navigation.navigate('SignIn')} >
+                            <Icon name="left" size={20} color="#fff"/>
+                        </TouchableOpacity>
 
+                    <Title>Digite seu email</Title>
                     <Form ref={formRef} onSubmit={(data) => {console.log(data)}}>
 
                         <Input autoCorrect={false} autoCapitalize="none" keyboardType="email-address" placeholder="E-mail" />
-
                         <Button onPress={() => formRef.current?.submitForm()}>Redefinir senha</Button>
-
-                        <ComeBack onPress={() => navigation.navigate('SignIn')}>
-                            <ComeBackText>Voltar</ComeBackText>
-                        </ComeBack>
 
                     </Form>
                 </Container>

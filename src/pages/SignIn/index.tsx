@@ -1,22 +1,17 @@
 import React, { useCallback, useRef } from 'react';
 
-import { View, ScrollView,  KeyboardAvoidingView, Platform, TextInput, ImageBackground } from 'react-native';
-import { useNavigation } from '@react-navigation/native'
+import { ScrollView,  KeyboardAvoidingView, Platform, ImageBackground,View } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 import { Form } from '@unform/mobile';
 import { FormHandles } from '@unform/core';
 
-// import Input from '../../components/Input';
-// import Button from '../../components/Button';
-// import {ListItem} from '../../components/ListItem'
-
-import palestra from '/Users/hebertsantos/Developer/Aplicativo/mobilevent/src/assets/palestra.jpg';
-import { Title, ForgotPassword, ForgotPasswordText, CompanyText } from './styles';
-import { ApplicationProvider, Button, Input } from '@ui-kitten/components';
+import palestra from '../../assets/palestra.jpg';
 import * as eva from '@eva-design/eva';
+import { ApplicationProvider, Button, Input } from '@ui-kitten/components';
+import { Title, ForgotPassword, ForgotPasswordText, CompanyText } from './styles';
 
 const SignIn: React.FC =  () => {
     const formRef = useRef<FormHandles>(null);
-    const passwordInputRef = useRef<TextInput>(null);
     const navigation = useNavigation(); 
 
     const handleSignIn = useCallback((data: object) => {
@@ -35,15 +30,15 @@ const SignIn: React.FC =  () => {
                 contentContainerStyle={{flex: 1}}
             >
                 <ImageBackground source={palestra} style={{flex:1, justifyContent:'center'}}>
-                    <View>
+                <View style={{flex:1, backgroundColor:'#0f0f0f', opacity:0.8, justifyContent:'space-around'}}>
+
                         <Title>Faça seu login</Title>
-                    </View>
 
                     <Form  ref={formRef} onSubmit={handleSignIn}>
-                        <Input style={{margin:15}} ref={passwordInputRef} onSubmitEditing={() => {}} returnKeyType="next" autoCorrect={false} autoCapitalize="none" keyboardType="email-address" name="email" icon="mail" placeholder="E-mail"/>
-                        <Input style={{margin:15}} textContentType="newPassword" secureTextEntry  returnKeyType="send" onSubmitEditing={() => {formRef.current?.submitForm();}} name="password" icon="lock" placeholder="Senha" />
+                        <Input style={{margin:15}} onSubmitEditing={() => {}} returnKeyType="next" autoCorrect={false} autoCapitalize="none" keyboardType="email-address" placeholder="E-mail"/>
+                        <Input style={{margin:15}} textContentType="newPassword" secureTextEntry  returnKeyType="send" onSubmitEditing={() => {formRef.current?.submitForm();}} placeholder="Senha" />
 
-                        <Button onPress={() => navigation.navigate('AccountUser')} style={{margin:15}} >Entrar</Button>
+                        <Button onPress={() => navigation.navigate('Drawer')} style={{margin:15}}>Entrar</Button>
                     </Form>
 
                     <ForgotPassword onPress={() => navigation.navigate('ForgotPassword')}>
@@ -52,6 +47,7 @@ const SignIn: React.FC =  () => {
 
                     <CompanyText>ERPevent@copyhight</CompanyText>
 
+                </View>
                 </ImageBackground>
             </ScrollView>
         </KeyboardAvoidingView>

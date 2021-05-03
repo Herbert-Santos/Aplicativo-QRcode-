@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, KeyboardAvoidingView, Platform  } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
+import Icon from 'react-native-vector-icons/AntDesign';
 
 import { Container, Title, CompanyText } from './styles';
 // import { Button } from '@ui-kitten/components';
@@ -16,6 +17,7 @@ const PasswordMassage: React.FC =  () => {
             enabled
         >
             <Container>
+            <Icon name="checkcircleo" size={70} color="#91db91"/>
                 <View>
                     <Title>Verifique sua caixa de email</Title>
                 </View>
