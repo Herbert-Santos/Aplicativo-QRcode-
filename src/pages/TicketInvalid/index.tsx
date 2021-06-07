@@ -19,24 +19,25 @@ const TicketInvalid: React.FC =  () => {
         >
 
             <Container>
-                 <TouchableOpacity
-                    style={{alignItems:'flex-end', bottom:80}}
-                    onPress={() => navigation.navigate('SignIn')}>
-                        
-                    <Icon name="bars" size={25} color="#fff"/>
-                </TouchableOpacity>
-
                 <View style={{alignItems:'center'}}>
-                    <Icon name="closecircleo" size={50} color="#fff"/>
+                    <Icon 
+                        name="closecircleo" 
+                        size={50} 
+                        color="#fff"
+                    />
                     <Title>Ingresso inválido</Title>
                 </View>
 
-                <Button onPress={() => navigation.navigate('ScanerNavigation')} style={{width: '100%'}}>Ler novamente</Button>
+                <Button 
+                    onPress={() => navigation.navigate('ScanerNavigation')} 
+                    style={{width: '100%'}}
+                >Ler novamente</Button>
             </Container>
         </KeyboardAvoidingView>
     </> 
     );
 };
 
-
 export default TicketInvalid; 
+
+// Quando o leito QR acusar que o ingresso não é válido

@@ -1,12 +1,12 @@
 import React from 'react';
-import { View, KeyboardAvoidingView, Platform, TouchableOpacity } from 'react-native';
+import { View, KeyboardAvoidingView, Platform } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import Icon from 'react-native-vector-icons/AntDesign';
 
 import Button from '../../components/Button';
 // import { Button } from '@ui-kitten/components';
 
-import { Container, Title, ComeBack, ComeBackText } from './styles';
+import { Container, Title } from './styles';
 
 const TicketValid: React.FC =  () => {
     const navigation = useNavigation();
@@ -19,12 +19,12 @@ const TicketValid: React.FC =  () => {
         >
 
             <Container>
-                <TouchableOpacity style={{alignItems:'flex-end', bottom:80}} onPress={() => navigation.navigate('SignIn')} >
-                    <Icon name="bars" size={25} color="#fff"/>
-                </TouchableOpacity>
-
                 <View style={{alignItems:'center'}}>
-                    <Icon name="checkcircleo" size={50} color="#8aec86"/>
+                    <Icon 
+                        name="checkcircleo" 
+                        size={50} 
+                        color="#8aec86"
+                    />
                     <Title>Ingresso válido</Title>
                 </View>
 
@@ -35,5 +35,6 @@ const TicketValid: React.FC =  () => {
     );
 };
 
-
 export default TicketValid; 
+
+// Quando o leitor QR acusar que o ingresso está válido
