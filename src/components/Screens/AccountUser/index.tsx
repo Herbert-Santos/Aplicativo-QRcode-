@@ -1,22 +1,37 @@
 import React from 'react';
-import { View, Text, StyleSheet, SafeAreaView, TouchableOpacity } from 'react-native';
-import Icon from 'react-native-vector-icons/AntDesign';
+import { View, FlatList, ImageBackground } from 'react-native';
+import { ListItem } from '../../ListItem';
+// import Icon from 'react-native-vector-icons/AntDesign';
 
-import {Container, Title} from './styles';
+import { Title, Container } from './styles';
+import palestra from '/Users/hebertsantos/Developer/Aplicativo/mobilevent/src/assets/palestra.jpg';
 
-const AccountUser:React.FC = () => {
-  return(
-    <View>
-      <SafeAreaView style={{flex:1}}>
-        <TouchableOpacity
-          style={{alignItems:'flex-end', margin:16,}}
-        >
-          <Icon name="bars" size={20} color="#fff"/>
-        </TouchableOpacity>
-        <Text>oi</Text>
-      </SafeAreaView>
-    </View>
-  )
+const AccountUser: React.FC = () => {
+    const AccountList = [
+        {id:'1', accountUser: 'Palestra-2.0'},
+        {id:'2', accountUser: 'Plataforma-Digital'},
+        {id:'8', accountUser: 'PortalERP'},
+    ];
+
+    return (
+        <ImageBackground source={palestra} style={{flex:1, justifyContent: 'center'}}>
+        <Container>
+
+            <View style={{borderBottomWidth:1, borderColor: '#fff'}}>
+                <Title>Portal ERP</Title>
+            </View>
+                
+            <FlatList 
+                    data={AccountList}
+                    keyExtractor={item => item.id}
+                    renderItem={ ({item}) => (
+                        <ListItem data={item}/>
+                    )}
+            />
+
+        </Container>
+        </ImageBackground>
+    );
 };
 
 export default AccountUser;

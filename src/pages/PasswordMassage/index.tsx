@@ -1,35 +1,41 @@
 import React from 'react';
-import { View, KeyboardAvoidingView, Platform  } from 'react-native';
-import { useNavigation } from '@react-navigation/native';
+import { ImageBackground, TouchableOpacity, Text } from 'react-native';
 import Icon from 'react-native-vector-icons/AntDesign';
+import { useNavigation } from '@react-navigation/native';
 
-import { Container, Title, CompanyText } from './styles';
-// import { Button } from '@ui-kitten/components';
-import Button from '../../components/Button';
+
+import { Container, ViewHeader, ViewBody } from './styles';
+import palestra from '../../assets/palestra.jpg';
 
 const PasswordMassage: React.FC =  () => {
-    const navigation = useNavigation();
-    return (
-    <>
-        <KeyboardAvoidingView
-            style={{flex: 1}}
-            behavior={Platform.OS == 'ios' ? 'padding' :  undefined}
-            enabled
-        >
-            <Container>
-            <Icon name="checkcircleo" size={70} color="#91db91"/>
-                <View>
-                    <Title>Verifique sua caixa de email</Title>
-                </View>
+    const navigation = useNavigation(); 
 
-                <Button onPress={() => navigation.navigate('SignIn')} style={{width: '100%'}}>
-                    Fazer login novamente
-                </Button>
-            </Container>
-            <CompanyText>ERPevent@copyhight</CompanyText>
-        </KeyboardAvoidingView>
-    </> 
+    return (
+        <ImageBackground source={palestra} style={{flex:1, justifyContent:'center'}}>
+        <Container>
+            <ViewHeader>
+                <TouchableOpacity onPress={()=> navigation.navigate('SignIn')}>
+                    <Icon 
+                        name='leftcircleo' 
+                        size={25} 
+                        color='#fff'
+                    />
+                </TouchableOpacity>
+            </ViewHeader>
+
+            <ViewBody>
+                <Icon 
+                    name="checkcircleo" 
+                    size={50} 
+                    color="#fff"
+                />
+                <Text style={{color: '#fff', fontSize:25, top:10}}>Verifique sua caixa de email</Text>
+            </ViewBody>
+        </Container>
+        </ImageBackground>
     );
 };
 
 export default PasswordMassage; 
+
+// Somente uma menssagem confirmando que a operação de recuperação de senha, foi concluida

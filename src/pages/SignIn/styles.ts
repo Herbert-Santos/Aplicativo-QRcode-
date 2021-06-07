@@ -1,5 +1,12 @@
 import styled from 'styled-components/native';
 
+ export const Container = styled.View`
+    flex:1;
+    background-color: #0f0f0f;
+    opacity: 0.8;
+    justify-content: space-around;
+ `;
+
  export const Title = styled.Text`
     font-size: 20px;
     color: #f4ede8;
@@ -15,14 +22,13 @@ import styled from 'styled-components/native';
  export const ForgotPasswordText = styled.Text`
    color: #f4ede8;
    font-size: 15px;
-   font-family: 'Roboto'; 
    align-self: center;
+   font-Weight:bold;
  `;
 
  export const CompanyText = styled.Text`
    color: #f4ede8;
-   align-self: center;
+   text-align: center;
    font-size: 12px;
-   padding: 10px;
    margin-top:140px;
  `;

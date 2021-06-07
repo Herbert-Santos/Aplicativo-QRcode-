@@ -11,12 +11,13 @@ const App: React.FC = () => (
     <StatusBar
       barStyle={'light-content'}
       backgroundColor={'#2E4061'}
+      hidden={true}
+      translucent={true}
     />
     <View style={{flex:1}}>
       <Routes /> 
     </View>
   </NavigationContainer>
 );
-
 
 export default App;
